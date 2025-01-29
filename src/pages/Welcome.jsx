@@ -52,7 +52,7 @@ const Welcome = () => {
                     scale: gettingStartedScal
                 }}
             >
-                <h1>Ready for a challenge?</h1>
+                <h1>Maximize Your Productivity</h1>
                 <div className="text-center text-1xl">
                     <Button>GET STARTED</Button>
                 </div>
