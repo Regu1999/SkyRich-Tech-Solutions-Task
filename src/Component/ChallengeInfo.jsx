@@ -24,7 +24,7 @@ const ChallengeInfo = ({id, imgUrl, title, date, description }) => {
     >
         <div>
             <div style={{ display: 'flex' }}>
-                <img src={`http://localhost:5173/src/assets/images/${imgUrl}.png`} width="80px" />
+                <img src={`/images/${imgUrl}.png`} width="80px" />
                 <div className="list-data ">
                     <p>{title}</p>
                     <small >Complete Until {date}</small>
