@@ -89,8 +89,7 @@ const AddNewChallenge = () => {
                             id={actionImage} 
                         />
                         <label htmlFor={actionImage}>
-                            <img src={`/images/${actionImage}.png`} 
-                                alt={actionImage} />
+                            <img src={`/images/${actionImage}.png`} />
                         </label>
                     </motion.li>
                 ))}
