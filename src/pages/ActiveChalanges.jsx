@@ -1,7 +1,7 @@
 import { motion, AnimatePresence, animate } from "motion/react"
 import { useContext } from "react";
 
-import ChallengeInfo from "../component/ChallengeInfo";
+import ChallengeInfo from "../Component/ChallengeInfo";
 import ChallengesContext from "../Component/context/ChallengesContext";
 import FileNotFound from "../Component/UI/FileNotFound";
 import { challengeFilter } from "../utlity/challengesFilter"
