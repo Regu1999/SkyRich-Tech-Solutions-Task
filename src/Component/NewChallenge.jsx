@@ -89,7 +89,7 @@ const AddNewChallenge = () => {
                             id={actionImage} 
                         />
                         <label htmlFor={actionImage}>
-                            <img src={`https://sky-rich-tech-solutions-task-i24z.vercel.app/src/assets/images/${actionImage}.png`} 
+                            <img src={`/assets/images/${actionImage}.png`} 
                                 alt={actionImage} />
                         </label>
                     </motion.li>
