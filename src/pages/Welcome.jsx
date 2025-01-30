@@ -1,6 +1,6 @@
 import "../assets/styles/welcome.css"
-import buildingImg from "../assets/images/buiding.jpg"
-import heroImg from "../assets/images/hero.png"
+import buildingImg from "/images/buiding.jpg"
+import heroImg from "/images/hero.png"
 import Button from "../Component/UI/Button";
 import Info from "../Component/UI/Info";
 import { motion, useScroll, useTransform } from "motion/react";

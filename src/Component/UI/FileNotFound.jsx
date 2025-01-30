@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 
-import notFoundImg from "../../assets/images/taskEmpty.webp";
+import notFoundImg from "/images/taskEmpty.webp";
 
 const FileNotFound = () => {
     return <motion.div style={{

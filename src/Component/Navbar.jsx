@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Link, useLocation } from "react-router"
 import "../assets/styles/navbar.css"
-import superHero from "../assets/images/superhero.jpg"
+import superHero from "/images/superhero.jpg"
 
 const Navbar = () => {
 const location=useLocation();
