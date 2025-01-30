@@ -1,0 +1,36 @@
+.challenge-lists {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: .8rem;
+}
+
+.challenge-image input {
+    display: none;
+}
+.challenge-image label{
+    border: solid 2px rgb(233, 231, 231);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    overflow: hidden;
+}
+.challenge-image img{
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+}
+.challenge-image input{
+    display: none;
+}
+.challenge-image input:checked+label{
+    border-color: #2d96f7;
+}
+.error-text{
+    color: red;
+    font-size: 15px;
+}
+.error-border{
+    border-color: red;
+}

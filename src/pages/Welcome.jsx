@@ -8,17 +8,19 @@ import Card from "../Component/UI/Card";
 import { FaSearchengin } from "react-icons/fa";
 import { TbMailbox } from "react-icons/tb";
 import { GiTrophy } from "react-icons/gi";
+import Navbar from "../Component/Navbar";
 
 const Welcome = () => {
     const { scrollY } = useScroll();
     const cityY = useTransform(scrollY, [0, 50, 100], [1, 20, 30])
-    const cityOpacity = useTransform(scrollY, [0, 150, 200, 250], [1, 0.5, 0.5, 0]);
+    const cityOpacity = useTransform(scrollY, [0, 200, 250, 300], [1, 0.5, 0.5, 0]);
     const heroY = useTransform(scrollY, [0, 100, 200], [1, 50, 100]);
-    const heroOpacity = useTransform(scrollY, [0, 200, 250, 300], [1, 0.5, 0.5, 0])
+    const heroOpacity = useTransform(scrollY, [0, 250, 300, 350], [1, 0.5, 0.5, 0])
     const gettingStartedScal = useTransform(scrollY, [0, 200], [1, 1.2]);
     const gettingStartedY = useTransform(scrollY, [0, 100, 200], [1, 25, 50]);
 
     return <>
+        <Navbar />
         <motion.main className="main-banner">
             <motion.img src={buildingImg} alt="Building"
                 style={{
@@ -52,7 +54,7 @@ const Welcome = () => {
                     scale: gettingStartedScal
                 }}
             >
-                <h1>Maximize Your Productivity</h1>
+                <h1 style={{padding:'2rem 0'}}>Maximize Your Productivity!</h1>
                 <div className="text-center text-1xl">
                     <Button>GET STARTED</Button>
                 </div>
@@ -66,7 +68,7 @@ const Welcome = () => {
                 facere aperiam sapiente culpa fugiat illo, dignissimos dolores esse laborum
                 nostrum ipsa rem! Similique ea suscipit maiores a accusamus voluptatum!
             </Info>
-            <Info title="Our way to success">
+            <Info title="OUR WAY TO SUCCESS">
 
                 <div style={{ display: 'flex', gap: '2rem', flexWrap: "wrap", justifyContent: 'center' }}>
                     <Card>

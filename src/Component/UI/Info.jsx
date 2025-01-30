@@ -6,7 +6,7 @@ const Info = ({ children, title }) => {
         viewport={{ once: true }}
         transition={{ type: "spring", delay: .2 }}
     >
-        <h3 style={{textAlign:'center'}}>
+        <h3 style={{textAlign:'center', padding:'2rem'}}>
             {title}
         </h3>
         <div style={{textAlign:'center'}}>

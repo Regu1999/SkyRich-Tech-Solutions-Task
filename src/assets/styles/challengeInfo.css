@@ -1,0 +1,26 @@
+.challengeList {
+    margin-top: 3rem;
+
+}
+
+.challengeList>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.challengeList img {
+    display: inline-block;
+}
+
+.list-data {
+    color: #2d96f7;
+    padding: 1rem .5rem;
+    display: inline-block;
+}
+.list-data p{
+    font-weight: bolder;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,30 @@
+.challenges {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 150px;
+}
+
+.challenges>div {
+    width: 100%;
+    max-width: 50rem;
+}
+.challenges h1{
+    color: yellow;
+}
+.challenges-header{
+    display: flex;
+    justify-content: space-between;
+    /* flex justify-between items-center pb-5 */
+}
+.challenges-list-card{
+    padding: 2rem;
+    background-color: #22323a;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.challenges-tabs{
+    display: flex;
+    align-items: center; 
+    /* gap: 1rem; */
+}

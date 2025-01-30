@@ -1,21 +1,10 @@
 import { motion } from "motion/react"
-import { useContext,useRef } from "react"
-
-import AddChallengeContext from "../context/AddChallengeContext"
-
+import "./uiComponent.css"
 
 const Model = ({ children, title }) => {
-    const { showModel } = useContext(AddChallengeContext);
-    const model=useRef()
-    function handleClose(e) {
-        // if (e.target!==model.current) {
-        //     showModel(false)
-        // }
-    }
-    return <div
-        onClick={handleClose} className="h-screen w-screen bg-black bg-opacity-50 
-    absolute z-10 flex justify-center items-center">
-        <motion.dialog open ref={model} className="rounded p-2 sm:p-8 w-full max-w-xl"
+
+    return <div className="model">
+        <motion.div className="model-container"
             variants={{
                 visible: {
                     y: 0,
@@ -29,10 +18,12 @@ const Model = ({ children, title }) => {
             animate="visible"
             exit="hidden"
         >
-            <h2 className="text-3xl font-bold mb-4">{title}</h2>
+            <h2
+            style={{fontSize:'2rem', fontWeight:'bold', marginBottom:'2rem'}}
+            >{title}</h2>
             {children}
             
-        </motion.dialog>
+        </motion.div>
     </div>
 }
 
