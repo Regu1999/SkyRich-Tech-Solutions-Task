@@ -18,7 +18,7 @@ if (location.pathname!=="/") {
         <div className="logo"><Link to="/"><img src={superHero} alt="super man" /></Link></div>
         <div>
             <Link to="/challenges">Challenges</Link>
-            <Link to="/movie">Movies list</Link>
+{/*             <Link to="/movie">Movies list</Link> */}
         </div>
     </motion.nav>
 }
