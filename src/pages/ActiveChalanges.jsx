@@ -8,7 +8,6 @@ import { challengeFilter } from "../utlity/challengesFilter"
 const ActiveChallenges = () => {
     const { challenges } = useContext(ChallengesContext);
     const activeChallenge = challengeFilter(challenges, "active")
-    console.log(activeChallenge);
 
     return <>
         <AnimatePresence>
