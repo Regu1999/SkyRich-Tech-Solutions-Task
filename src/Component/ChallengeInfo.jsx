@@ -2,6 +2,7 @@ import { useState, useContext } from "react"
 import { motion, AnimatePresence } from "motion/react";
 import ChallengesContext from "./context/ChallengesContext";
 import "../assets/styles/challengeInfo.css"
+import { TiArrowSortedDown } from "react-icons/ti";
 
 const ChallengeInfo = ({id, imgUrl, title, date, description }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +48,7 @@ const ChallengeInfo = ({id, imgUrl, title, date, description }) => {
                 animate={{
                     rotate: isOpen ? 180 : 0
                 }}
-            >&#11205;</motion.span>
+            ><TiArrowSortedDown /></motion.span>
         </motion.button>
         <AnimatePresence>
             {isOpen && <motion.p
