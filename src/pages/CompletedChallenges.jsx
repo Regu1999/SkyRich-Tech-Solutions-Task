@@ -9,7 +9,6 @@ import FileNotFound from "../Component/UI/FileNotFound";
 const CompletedChallenges = () => {
     const { challenges } = useContext(ChallengesContext);
     const activeChallenge = challengeFilter(challenges, "completed")
-    console.log(activeChallenge);
 
     return <>
         <AnimatePresence>

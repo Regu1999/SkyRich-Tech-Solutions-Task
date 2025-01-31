@@ -23,7 +23,6 @@ const Challenges = () => {
     function addChallenge(data) {
         data.status = "active";
         data.id = generateId()
-        console.log(data);
 
         setChallenges((prevState) => {
             return [...prevState, data]
@@ -62,7 +61,7 @@ const Challenges = () => {
                 </div>
                 <ChallengesContext.Provider value={{ challenges, hadleChallenges: handleChallangeStatus }}>
                     <motion.div className="challenges-list-card">
-                        <motion.div className="challenges-tabs ">
+                        <motion.div className="challenges-tabs">
                             <Tab path="" count={activeChallenge.length} isActive={location.pathname === "/challenges"}>Active</Tab>
                             <Tab path='completed' count={completedChallenge.length} isActive={location.pathname === "/challenges/completed"}>Completed</Tab>
                             <Tab path='failed' count={faildChallenge.length} isActive={location.pathname === "/challenges/failed"}>Failed</Tab>

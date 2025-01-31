@@ -8,7 +8,6 @@ import FileNotFound from "../Component/UI/FileNotFound";
 const FaildChallenges = () => {
     const { challenges } = useContext(ChallengesContext);
     const faildChallenge = challengeFilter(challenges, "failed")
-    console.log(faildChallenge);
 
     return <>
         <AnimatePresence>

@@ -15,7 +15,7 @@
 .challenges-header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* flex justify-between items-center pb-5 */
 }
 .challenges-list-card{
     padding: 2rem;
