@@ -1,14 +1,16 @@
 .tab-list{
     color: white;
-    padding: 1rem;
+    padding: .5rem;
+    
 }
 .tab-count{
     background-color: #2d96f7;
-    padding: .1rem .3rem;
+    padding: .05rem .3rem;
     font-size: 10px;
     margin-left: .5rem;
     display: inline-block;
     border-radius: 2px;
+    height: fit-content;
 }
 
 .tab-line{
@@ -20,4 +22,11 @@
     background-color: #2d96f7;
     border-radius: 2px;
 
+}
+
+@media only screen and (max-width: 440px){
+    .tab-count{
+        padding: .1rem .2rem;
+        font-size: 8px;
+    }
 }
