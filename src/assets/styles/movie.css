@@ -131,7 +131,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    /* justify-content: center ; */
+    justify-content: center ;
 
 }
 .list-container p{
@@ -140,6 +140,13 @@
     font-size: .8rem;
 }
 @media only screen and (max-width: 768px){
+    .view-container {
+        margin-top: 2rem;
+        padding:1rem .5rem;
+    }
+    .movie-details>div{
+        width: 65%;
+    }
     .search-container{
         flex-direction: column;
         gap: 1.5rem;
