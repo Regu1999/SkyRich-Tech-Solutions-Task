@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { motion } from "motion/react";
 
-const ListCard=()=>{
+const ListCard=({title,year, poster, type,imdbID})=>{
     return <motion.li
         variants={{
             hidden: {
@@ -15,10 +15,10 @@ const ListCard=()=>{
         }}
         transition={{ stiffness: 'spring' }}
     >
-        <Link to="viewMovie">
-            <img className="card-shaddow" src="https://m.media-amazon.com/images/M/MV5BNzQxNTIyODAxMV5BMl5BanBnXkFtZTgwNzQyMDA3OTE@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="moon light" />
-            <p>Moon light</p>
-            <p>2016 ‧ Romance/Drama</p>
+        <Link to={`/movies/viewMovie?imdbID=${imdbID}`}>
+            <img className="card-shaddow" src={poster} alt={title} />
+            <p>{title}</p>
+            <p>{year} ‧ {type}</p>
         </Link>
     </motion.li>
 }

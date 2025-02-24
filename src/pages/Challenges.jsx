@@ -7,7 +7,6 @@ import Tab from "../Component/Tab";
 import Model from "../Component/UI/Model"
 import AddNewChallenge from "../Component/NewChallenge";
 import AddChallengeContext from "../Component/context/AddChallengeContext";
-import Navbar from "../Component/Navbar";
 import "../assets/styles/challenges.css"
 import { generateId } from "../utlity/generateRandomId"
 import ChallengesContext from "../Component/context/ChallengesContext";
@@ -44,7 +43,6 @@ const Challenges = () => {
     }
 
     return <>
-        <Navbar />
         <AddChallengeContext.Provider value={{ showModel: setIsShowModel, addChallenge }}>
             <AnimatePresence>
                 {isShowModel && <Model title="New Challenge"><AddNewChallenge /></Model>}

@@ -73,8 +73,8 @@
     margin-top: 3rem;
     display: flex;
     justify-content: center;
-    color:white;
-    padding:2rem 1rem;
+    color: white;
+    padding: 2rem 1rem;
 }
 
 .blur-background {
@@ -93,28 +93,36 @@
     -webkit-filter: blur(8px);
     z-index: -1;
 }
-.movie-details{
+
+.movie-details {
     display: flex;
     justify-content: center;
     max-width: 50rem;
 }
-.movie-details>div{
+
+.movie-details>div {
     width: 50%;
 }
 
-.movie-details img{
+.movie-details img {
     width: 30%;
     height: 100%;
 
 }
-.card-shaddow{
+
+.card-shaddow {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
-.movie-details p, .movie-details h1,.movie-details h3{
-    padding:.7rem 0;
+    width: 100%;
+    height: 80%;
 }
 
-.movie-details a{
+.movie-details p,
+.movie-details h1,
+.movie-details h3 {
+    padding: .7rem 0;
+}
+
+.movie-details a {
     display: inline-block;
     margin-top: .2rem;
     padding: .5rem;
@@ -123,56 +131,69 @@
     border-radius: 5px;
 }
 
-.list-container h1{
-    margin: 5rem 0 2rem  0;
+.list-container h1 {
+    margin: 5rem 0 2rem 0;
     color: yellow;
 }
+
 .list-container ul {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center ;
+    justify-content: center;
 
 }
-.list-container p{
+
+.list-container ul li {
+    max-width: 12rem;
+}
+
+.list-container p {
     color: white;
     padding: .2rem 0;
     font-size: .8rem;
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
     .view-container {
         margin-top: 2rem;
-        padding:1rem .5rem;
+        padding: 1rem .5rem;
     }
-    .movie-details>div{
+
+    .movie-details>div {
         width: 65%;
     }
-    .search-container{
+
+    .search-container {
         flex-direction: column;
         gap: 1.5rem;
         padding-top: 5rem;
     }
-    
+
     .search-filter {
         max-width: 90%;
         height: 100%;
     }
-    .movie-details{
+
+    .movie-details {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .movie-details img{
+
+    .movie-details img {
         width: 100%;
         max-width: 200px;
         height: 200px;
     }
-    .movie-details>div{
+
+    .movie-details>div {
         text-align: center;
     }
-    .movie-details h3{
+
+    .movie-details h3 {
         font-size: 1rem;
         padding: .1rem;
 
     }
-    
+
 }

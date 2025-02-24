@@ -8,7 +8,6 @@ import Card from "../Component/UI/Card";
 import { FaSearchengin } from "react-icons/fa";
 import { TbMailbox } from "react-icons/tb";
 import { GiTrophy } from "react-icons/gi";
-import Navbar from "../Component/Navbar";
 
 const Welcome = () => {
     const { scrollY } = useScroll();
@@ -20,7 +19,6 @@ const Welcome = () => {
     const gettingStartedY = useTransform(scrollY, [0, 100, 200], [1, 25, 50]);
 
     return <>
-        <Navbar />
         <motion.main className="main-banner">
             <motion.img src={buildingImg} alt="Building"
                 style={{

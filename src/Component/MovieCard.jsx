@@ -1,6 +1,9 @@
-import { Link } from "react-router"
-import { motion } from 'motion/react'
-const MovieCard = () => {
+import { Link } from "react-router";
+import { motion } from 'motion/react';
+
+import { viewMovie, queryClient,movieSearchResult } from "../http.js";
+
+const MovieCard = ({movieData}) => {
     return <motion.div
         initial={{
             opacity: 0,
@@ -13,7 +16,7 @@ const MovieCard = () => {
         className='view-container'>
         <div className="blur-background"
             style={{
-                background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL(https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg)`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL(${movieData.Poster})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '70%',
                 backgroundPosition: "center",
@@ -21,17 +24,18 @@ const MovieCard = () => {
         ></div>
         <div className="movie-details">
             <div>
-                <h1>Interstellar</h1>
+                <h1>{movieData.Title}</h1>
                 <p>
-                    When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.
+                    {movieData.Plot}
                 </p>
-                <h3>2014 ‧ Sci-fi/Adventure</h3>
-                <h3>2h 49m , IMDb - 8.7</h3>
-                <Link to="../" style={{color:'black'}}>Back</Link>
+                <h3>{movieData.Year} ‧ {movieData.Genre&&movieData.Genre}</h3>
+                <h3>{movieData.Runtime} , IMDb - {movieData.imdbRating}</h3>
+                <Link to="../" style={{ color: 'black' }}>Back</Link>
             </div>
-            <img className="card-shaddow" src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="interstellar" />
+            <img className="card-shaddow" src={movieData.Poster} alt={movieData.Title} />
         </div>
     </motion.div>
 }
 
 export default MovieCard
+
